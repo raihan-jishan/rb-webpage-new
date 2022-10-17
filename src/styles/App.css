@@ -1,0 +1,37 @@
+/* 
+    title: a p p. css 
+    description: main css file for styling gloval things or css root colors body etc. 
+    date: 16 - - 10 - 2022
+    mood: 🏕 
+
+  */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  outline: none;
+  text-decoration: none;
+} */
+/*  body */
+body {
+  scroll-behavior: smooth;
+}
+/*  root color */
+:root {
+  --activeGreen: #2dbf64;
+  --fontPrimary: #002333;
+  --preSilver: #a7a7a7;
+  --questionBG: #e4e8ee;
+  --successGreen: #00ff84;
+  --bodyBackground: #f2f4f8;
+  --smartYellow: #ffc916;
+  --smartBlue: #0070f3;
+  --purpule: #728fce;
+}
+
+
+/*  tailwind css utilities  */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

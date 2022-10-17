@@ -1,0 +1,59 @@
+/* 
+  title: navbar file
+  description: a simple navbar file for navbar  logo or other itme's.
+  mood: 🍏 
+
+*/
+.CustomLogoiicon{
+  background: var(--fontPrimary);
+  font-size: 2rem;
+  color: var(--preSilver);
+}
+/* LogoHeading */
+.LogoHeading{
+  
+  background: rgba(0, 0, 0, 0.233);
+  padding: 0px 40px;
+  display: flex;
+  border-radius: 6px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+/* navbar customizations */
+.navbar{
+  background-color: rgba(192, 192, 192, 0.384);
+  color: aqua;
+  height: 120px;
+  overflow-x: auto;
+ 
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+/*  button css  */
+.buttonContainer{
+  background: var(--activeGreen);
+  padding: 4px 20px;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  color: var(--fontPrimary);
+  transition: 0.2s;
+}
+/* hover button */
+.buttonContainer:hover{
+  background-color: #00b442b6;
+  padding: 4px 30px;
+}
+/* responsibe media querys */
+@media screen and (max-width: 770px){
+    .navbar{
+      height: 160px;
+      
+    }
+     
+}

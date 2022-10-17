@@ -1,0 +1,50 @@
+/* 
+    title: increament css file . 
+    description: simple file for extrenal css in gloval.
+    mood: 😀 
+
+    */
+    /*  s t y l i n g  */
+    /* navitem */
+.navitems
+{
+  font-weight: bold;
+  color: var(--fontPrimary);
+  border-radius: 12px;
+  transition: 0.2s;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  cursor: pointer;
+  display: flex;
+  
+}
+.navitems:hover{
+  background: rgba(0, 0, 0, 0.075);
+   border-top: 8px solid #2dbf64;
+
+}
+
+/* OrderPage */
+.navitems:nth-child(5):hover{
+  padding: 0px 0px;
+  color: #2dbf64;
+   
+   
+}
+/* by defaulte medai convention  */
+
+/* responsibe media querys */
+@media screen and (max-width: 770px){
+  .navitems:hover{
+    padding: 6px 10px;
+  background: var(--activeGreen);
+    
+  }
+  .navitems:nth-child(5):hover{
+  padding: 6px 10px;
+  color: #002333
+
+  }
+   
+}
+
