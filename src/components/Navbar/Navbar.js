@@ -1,34 +1,54 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-// import logo from components
-// import Ulitems from "./Pics/Uils";
+import React, { useState } from "react";
+//  import icons 🍔
+// import * as FaIcons from 'react-icons/fa';
+import * as AiIcons from "react-icons/ai";
+// import {HiBars3BottomLeft} from 'react-icons/hi2';
+import { HiBars3BottomRight } from "react-icons/hi2";
+import { Link } from "react-router-dom";
+import { SidebarData } from "../../Data/SidebarData";
+import "../../styles/Navbar.css";
+import { IconContext } from "react-icons";
 import Brand from "./Pics/Brand";
-import Button from "./Pics/Button";
-//  import react icons
-import { MdBookmark } from "react-icons/md";
-// import custom css
-import style from "../../styles/Navbar.module.css";
-import Links from "./Pics/Links";
-export default function Navbar() {
+
+function Navbar() {
+  const [sidebar, setSidebar] = useState(false);
+
+  const showSidebar = () => setSidebar(!sidebar);
+
   return (
-    <div className={style.navbar}> 
-    <header className="text-gray-600 body-font">
-    <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-      <nav className="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
-     <Links /> 
-      </nav>
-      <a className="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
-        {/* heading logo components */}
-      <div className={style.LogoHeading}>
-              <MdBookmark className={style.CustomLogoiicon} />
-              <Brand />
-            </div>
-      </a>
-      <div className="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
-        {/* button components */}
-       
-      </div>
-    </div>
-  </header>
-  </div>
+    <>
+      <IconContext.Provider value={{ color: "#fff" }}>
+        <div className="navbar">
+          <Link to="#" className="menu-bars">
+            {/* <AiOutlineBars onClick={showSidebar}/> */}
+            <HiBars3BottomRight onClick={showSidebar} className='menuBars'/>
+          </Link>
+
+          {/* brand logo */}
+          <Brand />
+        </div>
+        <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
+          <ul className="nav-menu-items" onClick={showSidebar}>
+            <li className="navbar-toggle">
+              <Link to="#" className="menu-bars">
+                <AiIcons.AiOutlineClose />
+              </Link>
+            </li>
+            {SidebarData.map((item, index) => {
+              return (
+                <li key={index} className={item.cName}>
+                  <Link to={item.path}>
+                    {item.icon}
+                    <span>{item.title}</span>
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
+      </IconContext.Provider>
+    </>
   );
 }
+
+export default Navbar;

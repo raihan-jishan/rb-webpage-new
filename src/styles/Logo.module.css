@@ -1,0 +1,14 @@
+/* 
+   title: .logo file cus. 
+   description: S i m p l e Logo c  u s t o m iz a t io n fie
+   mood: 😪 
+*/
+/*  style  */
+.navbarLogo{
+    color: #fff;
+    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+}
