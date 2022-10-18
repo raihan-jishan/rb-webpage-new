@@ -26,13 +26,13 @@ export const SidebarData = [
   },
   {
     title: 'Pricing',
-    path: '/team',
+    path: '/pricing',
     icon: <IoIcons.IoMdPeople className='hoverIcon'/>,
     cName: 'nav-text'
   },
   {
     title: 'Faqs',
-    path: '/messages',
+    path: '/faqs',
     icon: <FaIcons.FaEnvelopeOpenText className='hoverIcon'/>,
     cName: 'nav-text'
   },

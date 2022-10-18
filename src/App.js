@@ -4,8 +4,15 @@ import { Routes, Route,Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 //  import home from components
 import Home from './pages/Home';
+import About from './pages/About'; 
+import Product from './pages/Product';
+import Pricing from './pages/Pricing';
+import Faqs from './pages/Faqs';
+import Update from './pages/Update';
+import Support from './pages/Support';
 //  Gloval style
 import './styles/App.css';
+import Setting from './pages/Setting';
 // import './styles/Extra.css';
 const App = () => {
   return (
@@ -14,6 +21,13 @@ const App = () => {
   
       <Routes>
     <Route path='/home' element={<Home/>}/> 
+    <Route path='/about' element={<About/>}/> 
+    <Route path='/products' element={<Product/>}/> 
+    <Route path='/pricing' element={<Pricing/>}/> 
+    <Route path='/faqs' element={<Faqs/>}/> 
+    <Route path='/update' element={<Update/>}/> 
+    <Route path='/support' element={<Support/>}/> 
+    <Route path='/setting' element={<Setting/>}/> 
 
 
     {/* Navigate toother page */}
