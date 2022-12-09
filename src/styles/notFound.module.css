@@ -1,0 +1,66 @@
+/*  
+  title: Notfound css file
+  desc; simple css file to style style not found css page 
+  time: 09 / 12 . 2022
+*/
+body{
+  background: #fffefe;
+}
+.notFoundContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*  h1 */
+.notFoundContainer h1{
+  font-weight: bold;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  margin: 4rem;
+  background: rgba(117, 117, 117, 0.116);
+  padding: 12px;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-top: 3px solid #2dbf64;
+}
+/* image */
+.image img{
+  width: 22%;
+  border-radius: 2rem;
+  display: flex;
+  align-items:  center;
+   margin: 62px auto;
+  justify-content: center;
+}
+/* paraNot */
+.paraNot{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-weight: 500;
+ font-size: 2rem;
+}
+ 
+/*  responsibe */
+@media screen and (max-width: 660px) {
+    .notFoundContainer h1{
+      font-size: 1.4rem;
+    }
+    .paraNot{
+      font-size: 1.2rem;
+    }
+    .image{
+      width: 55%;
+    }
+}
+@media screen and (max-width: 442px) {
+    .paraNot{
+      font-size: 1rem;
+    }
+}
+/*  if width == 280px */
+@media screen and (max-width: 1070px) {
+ .image{
+   display: none;
+ }
+}

@@ -10,6 +10,8 @@ import Pricing from './pages/Pricing';
 import Faqs from './pages/Faqs';
 import Update from './pages/Update';
 import Support from './pages/Support';
+import NotFound from './pages/404/NotFound';
+import Dashboard from "./pages/Dashbaord/Dashboard";
 //  Gloval style
 import './styles/App.css';
 import Setting from './pages/Setting';
@@ -28,12 +30,18 @@ const App = () => {
     <Route path='/update' element={<Update/>}/> 
     <Route path='/support' element={<Support/>}/> 
     <Route path='/setting' element={<Setting/>}/> 
-
+    <Route path='404' element={<NotFound  />}  />
+     {/* dashbaord route */}
+     <Route path='/dashboard' element={<Dashboard/>} /> 
 
     {/* Navigate toother page */}
     <Route
-       path="*"
+       path="/"
        element={<Navigate to="/home" replace />}
+   />
+    <Route
+       path="*"
+       element={<Navigate to="/404" replace />}
    />
 
       </Routes>

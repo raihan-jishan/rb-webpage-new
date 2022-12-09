@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 //  import icons 🍔
-// import * as FaIcons from 'react-icons/fa';
+// import * as FaIcons from 'react-icons/fa'; / ny deafult code==structure 
 import * as AiIcons from "react-icons/ai";
 // import {HiBars3BottomLeft} from 'react-icons/hi2';
 import { HiBars3BottomRight } from "react-icons/hi2";

@@ -1,0 +1,53 @@
+/* 
+  title: pageBtn file. 
+  description: A simple pageButton styling page, For design custom button .
+date: 19 - 10 - 2022
+  mood: 🔐 
+*/
+/*  styling */
+.PageContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--activeGreen);
+    padding: 6px 30px;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: var(--fontPrimary );
+    margin: 7px;
+    border-radius: 0.3rem; 
+    transition: 0.1s;
+}
+/*  if hover than bg */
+.PageContainer:hover{
+    border: 1px solid transparent;
+    background: #1aec63ec;
+    border-radius: 0.5rem;
+}
+/*  mainContainer */
+.mainContainer{
+    display: flex;
+    justify-content: center;
+}
+
+/*  responsibe element  */
+@media screen and (max-width: 770px) {
+    .PageContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--activeGreen);
+        padding: 6px 30px;
+        font-weight: bold;
+        font-size: 1.4rem;
+        color: var(--fontPrimary );
+        margin: 7px;
+        border-radius: 0.3rem; 
+        transition: 0.1s;
+        
+         
+    }
+    .mainContainer{
+        display: inline;
+    }
+}
